@@ -384,6 +384,12 @@
   });
   button.addEventListener("click", function () {
     console.log("success");
+    setTimeout(function () {
+      messagesent();
+    }, 1500);
+  });
+
+  function messagesent() {
     let name = document.getElementById("inputname");
     let email = document.getElementById("inputemail");
     let text = document.getElementById("inputtext");
@@ -393,7 +399,7 @@
       });
       document.getElementById("contactsuccess").style.display = "block";
     }
-  });
+  }
 </script>
 <script>
   let navimagemini = document.getElementById("navimagemini");
