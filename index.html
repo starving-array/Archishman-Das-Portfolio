@@ -290,7 +290,7 @@
               <input
                 type="hidden"
                 name="_next"
-                value="./thankyou.html"
+                value="thankyou.html"
               />
               <input type="hidden" name="_template" value="table" />
 
@@ -375,8 +375,8 @@
 
 <script>
   let button = document.getElementById("contactbutton");
-
-  button.addEventListener("click", (e) => {
+  
+  button.addEventListener("submit", (e) => {
     console.log("success");
     document.querySelectorAll(".form-control").forEach((elem) => {
       elem.value = null;
