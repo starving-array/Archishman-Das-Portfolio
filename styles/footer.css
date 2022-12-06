@@ -9,6 +9,21 @@
   min-width: 600px;
 }
 
+.topScroll{
+  text-align: end;
+  height: 50px;
+  width: 100%;
+  position:sticky;
+  top: 750px;
+  right: 60px;
+  opacity: .6;
+  z-index: 90;
+}
+
+.topScroll img{
+  height: 50px;
+  width: 50px;
+}
 @media all and (min-width: 600px) and (max-width: 1200px) {
   .formToConnect {
     flex-direction: column;

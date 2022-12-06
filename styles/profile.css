@@ -57,23 +57,6 @@
   min-width: 500px;
 }
 
-@media all and (min-width: 600px) and (max-width: 1200px) {
-  .textBox {
-    min-width: 400px;
-  }
-  .profileTemp {
-    height: 80vh;
-  }
-}
-
-@media all and (min-width: 300px) and (max-width: 601px) {
-  .textBox {
-    min-width: 300px;
-  }
-  .profileTemp {
-    height: 90vh;
-  }
-}
 .textSpanIntro {
   padding: 10px;
   font-size: 2rem;
@@ -105,6 +88,7 @@
   border: 1px solid rgb(3, 81, 184);
   display: flex;
   align-items: center;
+  justify-content: center;
   border-bottom-right-radius: 20px;
   box-shadow: 1px 2px 3px 1px rgb(3, 81, 184);
   display: flex;
@@ -165,7 +149,7 @@
     flex-direction: column;
     left: 20%;
     align-items: center;
-    top: 10%;
+    top: 20%;
     left: 10px;
     right: 10px;
   }
@@ -182,6 +166,44 @@
   }
   .imageHolderInside,
   .imageHolderInside > img {
+    border-radius: 100%;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 1200px) {
+  .textBox {
+    min-width: 400px;
+  }
+  .profileTemp {
+    height: 80vh;
+  }
+  .mailphone img {
+    width: 40px;
+  }
+  #resume {
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 601px) {
+  .textBox {
+    min-width: 300px;
+  }
+  .profileTemp {
+    height: 90vh;
+  }
+  .mailphone > div {
+    width: 30px;
+  }
+
+  .mailphone img {
+    width: 30px;
+  }
+  .imageBox {
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
   }
 }

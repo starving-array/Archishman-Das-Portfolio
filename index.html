@@ -38,6 +38,7 @@
     <!-- nav section  -->
     <div class="navsec flex-row">
       <div class="leftProfileBackgroundFill pink indexn"></div>
+
       <div class="navmenu flex-row">
         <div><a href="#about" class="light">Summary</a></div>
         <div><a href="#skills" class="light">Skills</a></div>
@@ -46,6 +47,20 @@
         <div>
           <a href="#contact" id="hireMe" class="light">Hire me!</a>
         </div>
+      </div>
+      <!-- // mobile view  -->
+      <div class="mobilemenu pos-rel flex-row">
+        <span class="navl">Hello World!</span>
+        <div class="navminimenuhide" id="navminimenu">
+          <div><a href="#about" class="light">Summary</a></div>
+          <div><a href="#skills" class="light">Skills</a></div>
+          <div><a href="#service" class="light">Service</a></div>
+          <div><a href="#projects" class="light"> Projects </a></div>
+          <div>
+            <a href="#contact" id="hireMe" class="light">Hire me!</a>
+          </div>
+        </div>
+        <img src="./img/menu(2).png" alt="navburger" id="navimagemini" />
       </div>
     </div>
 
@@ -92,19 +107,25 @@
               </div>
 
               <div id="resume">
-                <a href="./Archishman_Das_Resume.pdf" download> Resume </a>
+                <a href="./Archishman_Das_Resume.pdf" download class="small">
+                  Resume
+                </a>
                 <img src="./img/download.png" alt="" />
               </div>
             </div>
+
+            <!-- <img src="./img/web-development(1).png" alt="" class="webimg"> -->
           </div>
         </div>
       </div>
     </div>
-
+    <div class="topScroll">
+      <a href="#top"><img src="./img/up-arrow(1).png" alt="" /></a>
+    </div>
     <!-- about me  short-->
     <div id="about">
       <h2 class="title">Summary</h2>
-      <div class="innerbody small">
+      <div class="innerbody small gap scrollMode">
         <!-- about me long  -->
         Passionate about coding. Completed
         <span class="light big"> Java Backend Devlopment </span> full time
@@ -113,9 +134,9 @@
         <span class="light big">1200+ DSA</span> with white boarding. Hands on
         experiance on Frontend and Backend projects.
       </div>
-      <div class="innerbody small">
+      <div class="innerbody small gap scrollMode">
         Ready to start SDE journey to contribute solution to the modern problems
-        and to experiance and be part of the rich culture of an organization.
+        and to experience and be part of the rich culture of an organization.
       </div>
     </div>
 
@@ -269,7 +290,7 @@
               <input
                 type="hidden"
                 name="_next"
-                value="http://127.0.0.1:5500/thankyou.html"
+                value="http://127.0.0.1:5500/Archishman-Das-Portfolio/thankyou.html"
               />
               <input type="hidden" name="_template" value="table" />
 
@@ -362,5 +383,18 @@
     });
 
     document.getElementById("contactsuccess").style.display = "block";
+  });
+</script>
+<script>
+  let navimagemini = document.getElementById("navimagemini");
+
+  navimagemini.addEventListener("click", function () {
+    let navmobile = document.getElementById("navminimenu");
+    console.log(navmobile.className);
+    if (navmobile.className == "navminimenuhide") {
+      navmobile.className = "navminimenuview";
+    } else {
+      navmobile.className = "navminimenuhide";
+    }
   });
 </script>

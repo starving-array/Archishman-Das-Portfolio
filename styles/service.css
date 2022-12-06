@@ -32,6 +32,7 @@
 }
 
 #statistics {
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -41,8 +42,6 @@
 
 .stat {
   display: flex;
-  flex-wrap: wrap;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -70,6 +69,10 @@
 }
 
 @media all and (min-width: 300px) and (max-width: 1030px) {
+  #statistics {
+    width: 90%;
+  }
+
   .stat {
     font-size: 0.9rem;
     padding: 7px 4px;
@@ -85,7 +88,7 @@
   padding: 20px;
 }
 @media all and (min-width: 300px) and (max-width: 601px) {
-  .calendar{
+  .calendar {
     padding: 10px;
   }
 }
@@ -96,4 +99,3 @@ span {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-

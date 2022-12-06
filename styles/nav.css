@@ -1,7 +1,6 @@
 .navsec {
-  height: 7vh;
   position: sticky;
-  height: 5vh;
+  height: 6vh;
   top: 0px;
   z-index: 9;
 }
@@ -24,8 +23,6 @@
   font-weight: bold;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
-
 
 .nav {
   display: flex;
@@ -93,13 +90,64 @@
     padding: 10px;
   }
 }
-
+.mobilemenu {
+  display: none;
+}
 @media all and (min-width: 300px) and (max-width: 661px) {
-    .navmenu{
-        flex-direction: column;
-        position: absolute;
-        align-items: flex-end;
-    }
+  .navl{
+    position: absolute;
+    left: 15px;
+    font-size: 1.4rem;
+    top: 15px;
+    color: white;
+  }
+  
+ 
+  
+  .navminimenuview {
+    display: flex;
+  }
+
+  .navminimenuhide {
+    display: none;
+  }
+
+  .mobilemenu {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3, 81, 184);
+    justify-content: end;
+  }
+
+  .mobilemenu > div {
+    flex-direction: column;
+    height: 50vh;
+    background-color: white;
+    opacity: .9;
+    width: 30%;
+    position: absolute;
+    top: 8vh;
+    align-items: flex-end;
+    padding: 10px;
+    z-index: 199900;
+  }
+
+  .mobilemenu > div a {
+    text-decoration: none;
+    font-size: 1.4rem;
+  }
+
+  .mobilemenu > div > div {
+    padding: 5px;
+  }
+  .mobilemenu img {
+    height: 100%;
+  }
+
+  .navmenu {
+    display: none;
+  }
   #resume a {
     font-size: 0.91rem;
   }
