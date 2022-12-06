@@ -1,0 +1,110 @@
+.formToConnect {
+  justify-content: space-around;
+}
+.form-control {
+  padding: 10px;
+  min-height: 20px;
+  margin: auto;
+  margin-top: 20px;
+  min-width: 600px;
+}
+
+@media all and (min-width: 600px) and (max-width: 1200px) {
+  .formToConnect {
+    flex-direction: column;
+  }
+  .form-control {
+    min-width: 500px;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 601px) {
+  .formToConnect {
+    flex-direction: column;
+  }
+  .form-control {
+    min-width: 280px;
+  }
+}
+#contactsuccess {
+  display: none;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  font-size: 1.4rem;
+  text-align: center;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#contactbutton {
+  min-width: 300px;
+  background-color: rgb(255, 136, 0);
+  padding: 10px;
+  color: white;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#contactbutton:hover {
+  color: rgb(3, 81, 184);
+  background-color: white;
+}
+
+/* footer  */
+
+#contact img {
+  padding: 3px;
+  width: 20px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+}
+#contact a:hover {
+  color: orange;
+}
+
+#contactIn {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#contactIn div {
+  margin-bottom: 15px;
+}
+#linkdin img {
+  background-color: white;
+  border: 5px solid transparent;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px 1px rgb(70, 70, 70);
+}
+
+#linkdin img:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#linkdin a {
+  margin-bottom: 10px;
+  border: 10px solid transparent;
+}
+
+#contact {
+  background-color: rgb(3, 81, 184);
+  width: 100%;
+}
+#contact h3 {
+  color: white;
+}

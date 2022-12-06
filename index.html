@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Port</title>
+
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+    </style>
+    <link rel="icon" href="./img/java.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <link rel="stylesheet" href="./styles/nav.css" />
+    <link rel="stylesheet" href="./styles/summery.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/service.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <!-- nav section  -->
+    <div class="navsec flex-row">
+      <div class="leftProfileBackgroundFill pink indexn"></div>
+      <div class="navmenu flex-row">
+        <div><a href="#about" class="light">Summary</a></div>
+        <div><a href="#skills" class="light">Skills</a></div>
+        <div><a href="#service" class="light">Service</a></div>
+        <div><a href="#projects" class="light"> Projects </a></div>
+        <div>
+          <a href="#contact" id="hireMe" class="light">Hire me!</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- profile sec  -->
+    <div id="top" class="profile pos-rel">
+      <div class="profileTemp flex-row">
+        <div class="leftProfileBackgroundFill pink"></div>
+        <div class="rightProfileBackgroundFill teal"></div>
+      </div>
+
+      <div class="profilePerm flex-row pos-abs flexA-center">
+        <!-- absulute position  -->
+        <div class="imageBox flex-row pos-rel">
+          <div class="imageholder pos-rel">
+            <div class="imageBorderbox flex-row">
+              <div class="leftBorderBox teal"></div>
+              <div class="rightBorderBox pink"></div>
+            </div>
+
+            <div class="imageHolderInside pos-abs">
+              <img src="./img/project_20220402_1024320-01__01(1).jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="textBox flex-row flexJ-center">
+          <div class="textSpanIntro">
+            <p class="small">Hi There!</p>
+            <p class="animate small">
+              I'm <span class="light big"> Archishman Das</span>
+            </p>
+            <p class="small">A Java Backend Developer</p>
+            <div class="mailphone flex-row">
+              <div>
+                <a href="mailto:gowork.archis@gmail.com">
+                  <img src="./img/envelope(1).png" alt="" />
+                </a>
+              </div>
+
+              <div>
+                <a href="tel:801-616-6683">
+                  <img src="./img/phone-call(1).png" alt="" />
+                </a>
+              </div>
+
+              <div id="resume">
+                <a href="./Archishman_Das_Resume.pdf" download> Resume </a>
+                <img src="./img/download.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- about me  short-->
+    <div id="about">
+      <h2 class="title">Summary</h2>
+      <div class="innerbody small">
+        <!-- about me long  -->
+        Passionate about coding. Completed
+        <span class="light big"> Java Backend Devlopment </span> full time
+        course with 9-9-6 routine built on Agile structure. Spent 15+ hours
+        everyday to complete assignments and projects. Solved
+        <span class="light big">1200+ DSA</span> with white boarding. Hands on
+        experiance on Frontend and Backend projects.
+      </div>
+      <div class="innerbody small">
+        Ready to start SDE journey to contribute solution to the modern problems
+        and to experiance and be part of the rich culture of an organization.
+      </div>
+    </div>
+
+    <!-- tech stack  -->
+    <div id="skills">
+      <h3 class="title">Skills</h3>
+      <div id="softskill" class="gap scrollMode">
+        <h3 class="titleMin title">Soft Skills</h3>
+        <div id="softskillChild">
+          <div class="softskill">Consistency</div>
+          <div class="softskill">Team Player</div>
+          <div class="softskill">Multi Tasking</div>
+          <div class="softskill">Remort Work</div>
+          <div class="softskill">Adaptibility</div>
+          <div class="softskill">Time Management</div>
+        </div>
+      </div>
+
+      <div id="teckstack" class="gap scrollMode">
+        <h3 class="titleMin title" id="teckStackTitle">Technical Skills</h3>
+        <!-- // version control  -->
+        <!-- front end  -->
+        <!-- backend  -->
+        <!-- framework  -->
+        <!-- Data structure  -->
+        <!-- IDE  -->
+
+        <div class="techBox">
+          <div class="techStackHead">Version Control</div>
+          <div class="teckChild"><img src="./img/github.png" alt="" /></div>
+        </div>
+
+        <div class="techBox">
+          <div class="techStackHead">Frontend</div>
+          <div class="teckChild">
+            <img src="./img/html-5.png" alt="HTML" />
+            <img src="./img/css-3.png" alt="CSS" />
+            <img src="./img/js.png" alt="JAVASCRIPT" />
+            <img src="./img/bootstrap.png" alt="BOOTSTRAP" />
+          </div>
+        </div>
+        <div class="techBox">
+          <div class="techStackHead">Backend</div>
+          <div class="teckChild">
+            <img src="./img/java.png" alt="JAVA" />
+            <img src="./img/php.png" alt="PHP" />
+            <img src="./img/python.png" alt="PHYTHON" />
+            <img src="./img/mysql.png" alt="MySQL" />
+            <!-- <img src="" alt="RESTAP" /> -->
+          </div>
+        </div>
+        <div class="techBox">
+          <div class="techStackHead">Framework</div>
+          <div class="teckChild">
+            <img src="./img/pngaaa.com-2459579.png" alt="Spring" />
+            <img src="./img/hibernate.png" alt="HyberNate" />
+          </div>
+        </div>
+        <!-- <div class="techBox">
+          <div class="techStackHead">Data Structure & Algo</div>
+          <div class="teckChild"></div>
+        </div> -->
+        <div class="techBox">
+          <div class="techStackHead">IDE</div>
+          <div class="teckChild">
+            <img src="./img/vscode.png" alt="VISUALS" /><img
+              src="./img/atom.jpg"
+              alt="ATOM"
+            /><img src="./img/sts.jpg" alt="SPRING" />
+            <img src="./img/IntelliJ_IDEA_Icon.svg.png" alt="INTELIJ" />
+          </div>
+        </div>
+        <div class="techBox">
+          <div class="techStackHead">others</div>
+          <div class="teckChild">
+            <img
+              src="./img/Adobe_Photoshop_CC_icon.svg.png"
+              alt="PHOTOSHOP"
+            /><img
+              src="./img/Adobe_Dreamweaver_CC_icon.svg.png"
+              alt="DREAMWEAVER"
+            /><img src="./img/canvajpg.jpg" alt="CANVA" />
+            <img src="./img/AWS_Simple_Icons_AWS_Cloud.svg.png" alt="AWS" />
+
+            <!-- <img src="" alt="" /> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="service">
+      <h3 class="title">Service</h3>
+
+      <div class="experiance flex-col gap scrollMode">
+        <h3 class="titleMin title">Experience</h3>
+        <div class="serviceDiv flex-row">
+          <div class="servicelist">Dynamic web page</div>
+          <div class="servicelist">Web Services (REST API)</div>
+          <div class="servicelist">Schema and ER-Diagram</div>
+        </div>
+      </div>
+
+      <div id="statCont" class="gap scrollMode">
+        <h3 class="titleMin title">Statistics</h3>
+        <div id="statistics">
+          <div class="stat"><span>1500+ Hrs Coding</span></div>
+          <div class="stat"><span>1200+ DSA</span></div>
+          <div class="stat"><span>120+ Hrs Soft Skills</span></div>
+          <div class="stat"><span>520+ Git Commits</span></div>
+          <div class="stat"><span>4+ Group Projects</span></div>
+          <div class="stat"><span>10+ Solo Projects</span></div>
+        </div>
+      </div>
+
+      <div id="calender" class="scrollMode">
+        <h3 class="titleMin title">GitHub Calendar</h3>
+        <div class="calendar"></div>
+      </div>
+    </div>
+
+    <!-- soft skill  -->
+    <!-- expertise on  -->
+
+    <!-- projects  -->
+    <div id="projects" class="gap">
+      <h3 class="title">Projects</h3>
+      <div id="projectContainer">
+        <!-- js script here  -->
+      </div>
+    </div>
+    <!-- git hub map  -->
+    <!-- footer cta section  -->
+
+    <footer>
+      <div id="contact">
+        <div class="formToConnect flex-row">
+          <h3 class="title gap">Let's connect</h3>
+          <div class="formContact">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/gowork.archis@gmail.com"
+              method="POST"
+              class="flex-col"
+            >
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Portfolio Interest!"
+              />
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/thankyou.html"
+              />
+              <input type="hidden" name="_template" value="table" />
+
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Full Name"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email Address"
+                required
+              />
+              <input
+                type="text"
+                name="phone"
+                class="form-control"
+                placeholder="Contact number"
+              />
+
+              <textarea
+                placeholder="Your Message"
+                class="form-control"
+                name="message"
+                rows="10"
+                required
+              ></textarea>
+              <button
+                id="contactbutton"
+                type="submit"
+                class="btn btn-lg btn-dark btn-block"
+              >
+                Submit Form
+              </button>
+              <p id="contactsuccess">Message sent successfully</p>
+            </form>
+          </div>
+        </div>
+        <div id="contactIn">
+          <div id="linkdin">
+            <a href="https://www.linkedin.com/in/archeese/" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111499.png"
+                alt=""
+              />
+            </a>
+
+            <a href="https://twitter.com/wakeuparchis" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+                alt=""
+              />
+            </a>
+
+            <a href="https://wa.me/8016166683" target="_blank">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/220/220236.png"
+                alt=""
+              />
+            </a>
+
+            <a href="https://github.com/starving-array" target="_blank">
+              <img src="./img/github.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script src="./js/lazyScroll.js"></script>
+<script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+<script>
+  GitHubCalendar(".calendar", "starving-array");
+  GitHubCalendar(".calendar", "starving-array", { responsive: true });
+</script>
+<script src="./js/projects.js"></script>
+
+<script>
+  let button = document.getElementById("contactbutton");
+  button.addEventListener("submit", (e) => {
+    e.preventDefault();
+    console.log("success");
+    document.querySelectorAll(".form-control").forEach((elem) => {
+      elem.value = null;
+    });
+
+    document.getElementById("contactsuccess").style.display = "block";
+  });
+</script>

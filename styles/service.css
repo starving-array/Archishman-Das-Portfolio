@@ -1,0 +1,99 @@
+.experiance {
+  align-items: center;
+  justify-content: center;
+}
+.serviceDiv {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.servicelist {
+  text-align: center;
+  width: 300px;
+  max-height: 70px;
+  font-size: 1.4rem;
+  background-color: rgb(49, 136, 250);
+  color: white;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+  letter-spacing: 1px;
+  align-items: center;
+  border: 10px solid transparent;
+  /* border-radius: 20px; */
+  cursor: zoom-in;
+  padding: 10px 5px;
+}
+
+/* statistics */
+#statCont {
+  /* min-height: 30vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+#statistics {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  border: 20px solid transparent;
+}
+
+.stat {
+  display: flex;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: rgb(49, 136, 250);
+  color: white;
+  font-weight: bold;
+  margin: 15px;
+  padding: 5px;
+  letter-spacing: 1px;
+  max-width: 250px;
+  border: 10px solid transparent;
+  border-radius: 30px;
+  cursor: zoom-in;
+}
+.stat > span {
+  color: white;
+  padding: 10px 5px;
+}
+
+.stat:hover {
+  transform: scale(1.2, 1.2);
+  transition-duration: 1s;
+  background-color: orange;
+}
+
+@media all and (min-width: 300px) and (max-width: 1030px) {
+  .stat {
+    font-size: 0.9rem;
+    padding: 7px 4px;
+    border: 5px solid transparent;
+  }
+}
+
+.calendar {
+  max-width: 1000px;
+  max-height: 200px;
+  margin: auto;
+  box-shadow: 1px 1px 5px 1px rgb(49, 136, 250);
+  padding: 20px;
+}
+@media all and (min-width: 300px) and (max-width: 601px) {
+  .calendar{
+    padding: 10px;
+  }
+}
+span {
+  color: royalblue;
+  /* font-size: 110%; */
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+

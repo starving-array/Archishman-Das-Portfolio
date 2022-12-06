@@ -1,0 +1,215 @@
+/* // project  */
+
+#projects {
+  padding-top: 50px;
+  max-width: 1200px;
+  width: 90%;
+  min-height: 70vh;
+  margin: auto;
+  border: 20px solid transparent;
+  padding: 20px;
+}
+#projectContainer {
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr); */
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+  grid-gap: 20px 20px;
+}
+.imgDiv img {
+  width: 400px;
+  height: 300px;
+  /* cursor: zoom-in; */
+  /* border: 1px solid royalblue; */
+}
+
+.imgDiv {
+  background-color: white;
+}
+/* .imgDiv img:hover {
+  
+  border: 10px solid transparent;
+  z-index: 20;
+  cursor: zoom-out;
+  background-color: white;
+} */
+
+.imgDiv {
+  border: 10px solid white;
+  background-color: white;
+  text-align: center;
+}
+.boxProject {
+  margin: auto;
+  width: 90%;
+  height: fit-content;
+  border: 20px solid transparent;
+  display: flex;
+  box-shadow: 1px 2px 10px 1px rgb(249, 163, 163);
+
+  /* flex-wrap: wrap; */
+  /* align-items: center; */
+}
+.boxProject:hover {
+  transform: scale(1.05, 1);
+  transition-duration: 1s;
+  box-shadow: 4px 3px 8px 4px red;
+}
+
+.despriptionImageProject h3 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: rgb(216, 150, 6);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.git img {
+  border: 5px solid transparent;
+  border-radius: 10px;
+  width: 30px;
+}
+
+.netlifyLink,
+.git img {
+  box-shadow: 1px 2px 6px 1px royalblue;
+  background-color: white;
+}
+
+.netlifyLink:hover,
+.git img:hover {
+  /* box-shadow: 1px 2px 10px 1px rgb(194, 18, 47); */
+  /* background-color: rgb(243, 186, 186); */
+  background-color: rgb(248, 176, 43);
+}
+.netlifyLink {
+  border-radius: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 10px;
+}
+.netlifyLink a {
+  text-decoration: none;
+  color: black;
+  font-style: italic;
+  font-weight: bold;
+  opacity: 0.7;
+}
+
+.linksToRedirect {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#sideLine {
+  background-color: royalblue;
+}
+
+.descriptiveDiv {
+  border: 10px solid transparent;
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 1.1rem;
+  opacity: 0.8;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.projectText {
+  color: black;
+  /* margin-bottom: 30px; */
+}
+.techStackProjectImg {
+  margin: auto;
+  width: 90%;
+  border: 20px solid transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.techStackProjectImg img {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.techStackProjectImg img:hover{
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
+@media all and (min-width: 631px) and (max-width: 1200px) {
+  
+  #projectContainer {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    grid-gap: 20px 20px;
+  }
+  #projectContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .imgDiv img {
+    width: 300px;
+    height: 250px;
+    /* cursor: zoom-in; */
+    /* border: 1px solid royalblue; */
+  }
+  .boxProject{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 630px) {
+  #projects {
+    max-width: 350px;
+    width: 80%;
+  }
+  
+  #projectContainer {
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+  .imgDiv img {
+    width: 100%;
+    height: 180px;
+    /* cursor: zoom-in; */
+  }
+  .descriptiveDiv {
+    font-size: 0.7rem;
+  }
+  .despriptionImageProject h3 {
+    font-size: 1.4rem;
+  }
+  .boxProject{
+    display: block;
+  }
+  .git img {
+    width: 20px;
+  }
+  .netlifyLink {
+    font-size: 0.7rem;
+  }
+  .techStackProjectImg img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+}

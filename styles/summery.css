@@ -1,0 +1,18 @@
+#about {
+  width: 100%;
+}
+
+.innerbody {
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  margin-top: 20px;
+}
+.innerbody::first-letter{
+  margin-left: 60px;
+}
+@media all and (min-width: 300px) and (max-width: 1200px) {
+  .innerbody {
+    width: 88%;
+  }
+}

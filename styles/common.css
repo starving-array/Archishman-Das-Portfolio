@@ -1,0 +1,158 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.pink {
+  background-color: pink;
+  background-color: rgb(3, 81, 184);
+}
+
+.teal {
+  background-color: white;
+}
+
+.light {
+  color: rgb(3, 81, 184);
+}
+
+.grey {
+  color: grey;
+}
+
+.flexA-center {
+  align-items: center;
+}
+
+.flexJ-center {
+  justify-content: center;
+}
+
+.indexn {
+  z-index: -11;
+}
+
+#container {
+  padding-top: 20px;
+}
+
+.scrollMode {
+  position: relative;
+  transform: translate(-50px);
+  transition: 2s all ease;
+  opacity: 0;
+  /* animation-name: scroller; */
+}
+/* @keyframes scroller {
+    
+  } */
+.scrollMode.show {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+@media all and (min-width: 100px) and (max-width: 500px) {
+  .calendar img.spinner {
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .contrib-number {
+    font-size: 12px;
+  }
+  .calendar-graph text.wday,
+  .calendar-graph text.month {
+    font-size: 6px;
+  }
+  .contrib-legend {
+    text-align: right;
+    padding: 0 10px 10px 0;
+  }
+  .contrib-legend .legend li {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+  }
+
+  .contrib-footer {
+    font-size: 11px;
+    padding: 0 10px 12px;
+    text-align: left;
+    width: 80%;
+    box-sizing: border-box;
+    height: 26px;
+  }
+  #profileText > h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ////////////  */
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  opacity: 0.8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgb(255, 136, 0);
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+}
+.titleMin {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: rgb(3, 81, 184);
+}
+.circle {
+  border-radius: 100%;
+}
+
+.gap {
+  /* padding-top: 4vh; */
+}
+
+/* ////////////  */
+
+/* // text sizes  */
+.small {
+  font-size: 2rem;
+}
+.big {
+  font-size: 2.3rem;
+}
+@media all and (min-width: 600px) and (max-width: 1200px) {
+  .small {
+    font-size: 1.5rem;
+  }
+  .big {
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 601px) {
+  .small {
+    font-size: 1.1rem;
+  }
+  .big {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+}

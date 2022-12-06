@@ -1,0 +1,121 @@
+.navsec {
+  height: 7vh;
+  position: sticky;
+  height: 5vh;
+  top: 0px;
+  z-index: 9;
+}
+
+.navmenu {
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navmenu > div {
+  margin: 10px;
+  font-size: 1.3rem;
+}
+
+.navmenu > div > a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  font-size: 1.6rem;
+  align-items: center;
+}
+
+.nav div {
+  padding: 18px 12px;
+}
+.nav a {
+  text-decoration: none;
+  opacity: 0.8;
+  color: white;
+  /* letter-spacing: 0.5px; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.nav a:hover {
+  font-weight: bold;
+}
+.nav a.active {
+  font-style: oblique;
+}
+#hireMe {
+  padding: 2px;
+  opacity: 1;
+  color: orange;
+  letter-spacing: 0.6px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* // short cut to home  */
+#headToTop {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 120;
+}
+
+#headToTop img {
+  height: 40px;
+}
+
+@media all and (min-width: 750px) and (max-width: 1060px) {
+  #resume a {
+    font-size: 1rem;
+  }
+  .nav a {
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width: 660px) and (max-width: 751px) {
+  #resume a {
+    font-size: 1rem;
+  }
+  .nav a {
+    font-size: 0.9rem;
+  }
+  .nav div {
+    padding: 10px;
+  }
+}
+
+@media all and (min-width: 300px) and (max-width: 661px) {
+    .navmenu{
+        flex-direction: column;
+        position: absolute;
+        align-items: flex-end;
+    }
+  #resume a {
+    font-size: 0.91rem;
+  }
+  #resume img {
+    width: 20px;
+  }
+  .nav a {
+    font-size: 0.8rem;
+  }
+  .nav div {
+    padding: 7px;
+  }
+  .nav {
+    margin-right: 10px;
+  }
+  header {
+    flex-direction: column;
+  }
+}
