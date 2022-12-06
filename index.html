@@ -295,6 +295,7 @@
               <input type="hidden" name="_template" value="table" />
 
               <input
+                id="inputname"
                 type="text"
                 name="name"
                 class="form-control"
@@ -302,6 +303,7 @@
                 required
               />
               <input
+                id="inputemail"
                 type="email"
                 name="email"
                 class="form-control"
@@ -316,6 +318,7 @@
               />
 
               <textarea
+                id="inputtext"
                 placeholder="Your Message"
                 class="form-control"
                 name="message"
@@ -375,15 +378,21 @@
 
 <script>
   let button = document.getElementById("contactbutton");
-  
+
   button.addEventListener("submit", (e) => {
     e.preventDefault();
+  });
+  button.addEventListener("click", function () {
     console.log("success");
-    document.querySelectorAll(".form-control").forEach((elem) => {
-      elem.value = null;
-    });
-
-    document.getElementById("contactsuccess").style.display = "block";
+    let name = document.getElementById("inputname");
+    let email = document.getElementById("inputemail");
+    let text = document.getElementById("inputtext");
+    if (name.value != "" && email.value != "" && text.value != "") {
+      document.querySelectorAll(".form-control").forEach((elem) => {
+        elem.value = null;
+      });
+      document.getElementById("contactsuccess").style.display = "block";
+    }
   });
 </script>
 <script>
