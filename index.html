@@ -377,6 +377,7 @@
   let button = document.getElementById("contactbutton");
   
   button.addEventListener("submit", (e) => {
+    e.preventDefault();
     console.log("success");
     document.querySelectorAll(".form-control").forEach((elem) => {
       elem.value = null;
